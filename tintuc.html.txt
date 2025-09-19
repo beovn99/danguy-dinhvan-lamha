@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tin tức - Đảng ủy xã Đinh Văn Lâm Hà</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Tin tức</h1>
+</header>
+<nav>
+  <a href="index.html">Trang chủ</a>
+  <a href="gioithieu.html">Giới thiệu</a>
+  <a href="tintuc.html">Tin tức</a>
+  <a href="lienhe.html">Liên hệ</a>
+</nav>
+<main>
+  <section>
+    <h2>Bản tin mới nhất</h2>
+    <article>
+      <h3>Hội nghị triển khai kế hoạch năm 2025</h3>
+      <p>Ngày 10/01/2025, Đảng ủy xã Đinh Văn tổ chức Hội nghị triển khai kế hoạch năm 2025, tập trung vào các nhiệm vụ trọng tâm về phát triển kinh tế, xây dựng Đảng và giữ vững an ninh quốc phòng.</p>
+    </article>
+    <article>
+      <h3>Hoạt động chăm lo Tết Nguyên đán</h3>
+      <p>Các cấp ủy, chính quyền xã đã tổ chức nhiều hoạt động chăm lo Tết Nguyên đán Ất Tỵ 2025 cho hộ nghèo, gia đình chính sách và trẻ em có hoàn cảnh khó khăn.</p>
+    </article>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2025 Đảng ủy xã Đinh Văn Lâm Hà</p>
+</footer>
+</body>
+</html>
+```
+
+---

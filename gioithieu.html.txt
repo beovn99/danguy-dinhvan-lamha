@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Giới thiệu - Đảng ủy xã Đinh Văn Lâm Hà</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Giới thiệu</h1>
+</header>
+<nav>
+  <a href="index.html">Trang chủ</a>
+  <a href="gioithieu.html">Giới thiệu</a>
+  <a href="tintuc.html">Tin tức</a>
+  <a href="lienhe.html">Liên hệ</a>
+</nav>
+<main>
+  <section>
+    <h2>Đảng ủy xã Đinh Văn Lâm Hà</h2>
+    <p>Đảng ủy xã Đinh Văn là tổ chức chính trị cơ sở của Đảng Cộng sản Việt Nam tại địa phương, lãnh đạo toàn diện các mặt công tác của hệ thống chính trị, kinh tế - xã hội và an ninh quốc phòng.</p>
+    <p>Đảng ủy luôn chú trọng phát huy dân chủ, đoàn kết, đổi mới phương thức hoạt động để đáp ứng yêu cầu phát triển của địa phương trong giai đoạn mới.</p>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2025 Đảng ủy xã Đinh Văn Lâm Hà</p>
+</footer>
+</body>
+</html>
+```
+
+---

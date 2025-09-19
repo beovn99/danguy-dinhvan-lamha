@@ -1,0 +1,40 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang chủ - Đảng ủy xã Đinh Văn Lâm Hà</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Đảng ủy xã Đinh Văn Lâm Hà</h1>
+</header>
+<nav>
+  <a href="index.html">Trang chủ</a>
+  <a href="gioithieu.html">Giới thiệu</a>
+  <a href="tintuc.html">Tin tức</a>
+  <a href="lienhe.html">Liên hệ</a>
+</nav>
+<main>
+  <section>
+    <h2>Chào mừng</h2>
+    <p>Chào mừng bạn đến với website chính thức của Đảng ủy xã Đinh Văn Lâm Hà, tỉnh Lâm Đồng.</p>
+  </section>
+  <section>
+    <h2>Tin nổi bật</h2>
+    <ul>
+      <li>Hội nghị tổng kết năm 2024 và triển khai nhiệm vụ 2025.</li>
+      <li>Phong trào thi đua xây dựng nông thôn mới nâng cao.</li>
+      <li>Công tác phát triển Đảng viên mới năm 2025.</li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2025 Đảng ủy xã Đinh Văn Lâm Hà</p>
+</footer>
+</body>
+</html>
+```
+
+---
