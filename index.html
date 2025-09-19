@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang thông tin Đảng ủy xã Đinh Văn Lâm Hà</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f4; color: #333; }
+    header { background: #b30000; color: #fff; padding: 15px 20px; text-align: center; }
+    header h1 { font-size: 24px; }
+    nav { background: #800000; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav a { color: #fff; padding: 12px 20px; text-decoration: none; display: block; cursor: pointer; }
+    nav a:hover { background: #a00000; }
+    .banner { background: url('https://via.placeholder.com/1200x300?text=Banner+Dang+Uy+Xa+Dinh+Van+Lam+Ha') no-repeat center center/cover; height: 300px; }
+    main { width: 90%; margin: 20px auto; display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+    .content, .sidebar, .page { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+    .content h2, .sidebar h2, .page h2 { margin-bottom: 10px; color: #b30000; }
+    .news-item, .doc-item, .prop-item { margin-bottom: 10px; }
+    .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .gallery img { width: 100%; border-radius: 5px; }
+    footer { background: #800000; color: #fff; text-align: center; padding: 20px; margin-top: 20px; }
+    .hidden { display: none; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    form input, form textarea { padding: 8px; margin-bottom: 8px; border: 1px solid #ccc; border-radius: 4px; }
+    button { background: #b30000; color: white; padding: 10px 16px; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #900000; }
+    ul { list-style: none; padding-left: 0; }
+    ul li a { color: #800000; text-decoration: none; }
+  </style>
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
+      document.getElementById(pageId).classList.remove('hidden');
+      window.scrollTo({top:0, behavior:'smooth'});
+    }
+    function submitContact(e) {
+      e.preventDefault();
+      alert('Cảm ơn! Nội dung liên hệ của bạn đã được ghi nhận (mẫu demo).');
+      document.getElementById('contactForm').reset();
+    }
+    document.addEventListener('DOMContentLoaded', function(){
+      // default page
+      showPage('home');
+      document.getElementById('contactForm').addEventListener('submit', submitContact);
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Trang thông tin điện tử - Đảng ủy xã Đinh Văn Lâm Hà </h1>
+  </header>
+  <nav>
+    <a onclick="showPage('home')">Trang chủ</a>
+    <a onclick="showPage('about')">Giới thiệu</a>
+    <a onclick="showPage('news')">Tin tức</a>
+    <a onclick="showPage('docs')">Văn bản</a>
+    <a onclick="showPage('propaganda')">Tuyên truyền</a>
+    <a onclick="showPage('gallery')">Thư viện</a>
+    <a onclick="showPage('contact')">Liên hệ</a>
+  </nav>
+  <section class="banner" role="img" aria-label="Banner Đảng ủy xã"></section>
+
+  <main>
+    <!-- Trang chủ -->
+    <section class="content page" id="home">
+      <h2>Tin tức mới nhất</h2>
+      <div class="news-item">📌 Hội nghị tổng kết công tác năm 2025</div>
+      <div class="news-item">📌 Tổ chức lễ kỷ niệm 80 năm Quốc khánh</div>
+      <div class="news-item">📌 Phong trào thi đua xây dựng nông thôn mới</div>
+
+      <h2>Văn bản chỉ đạo</h2>
+      <div class="doc-item">📄 Nghị quyết 2025 <a href="#">[PDF]</a></div>
+      <div class="doc-item">📄 Hướng dẫn triển khai công tác <a href="#">[DOC]</a></div>
+      <div class="doc-item">📄 Báo cáo tổng kết quý III <a href="#">[PDF]</a></div>
+
+      <h2>Tuyên truyền</h2>
+      <div class="prop-item">📢 Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh</div>
+      <div class="prop-item">📢 Tuyên truyền pháp luật mới ban hành</div>
+      <div class="prop-item">📢 Phong trào "Toàn dân đoàn kết xây dựng đời sống văn hóa"</div>
+
+      <h2>Thư viện ảnh</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/300?text=Ảnh+1" alt="Ảnh 1">
+        <img src="https://via.placeholder.com/300?text=Ảnh+2" alt="Ảnh 2">
+        <img src="https://via.placeholder.com/300?text=Ảnh+3" alt="Ảnh 3">
+        <img src="https://via.placeholder.com/300?text=Ảnh+4" alt="Ảnh 4">
+      </div>
+    </section>
+
+    <!-- Trang Giới thiệu -->
+    <section class="page hidden" id="about">
+      <h2>Giới thiệu</h2>
+      <p>Đảng ủy xã Đinh Văn Lâm Hà có chức năng lãnh đạo, chỉ đạo toàn diện các hoạt động chính trị, kinh tế, văn hóa, xã hội trên địa bàn xã.</p>
+      <h3>Lịch sử hình thành</h3>
+      <p>Được thành lập từ năm XXXX, Đảng ủy xã đã trải qua nhiều giai đoạn phát triển, gắn liền với công cuộc xây dựng và bảo vệ Tổ quốc.</p>
+      <h3>Sơ đồ tổ chức</h3>
+      <p>[Ảnh sơ đồ tổ chức]</p>
+      <h3>Lãnh đạo</h3>
+      <ul>
+        <li>Bí thư Đảng ủy: Nguyễn Văn A</li>
+        <li>Phó Bí thư: Trần Thị B</li>
+        <li>Các Ủy viên Ban Chấp hành: ...</li>
+      </ul>
+    </section>
+
+    <!-- Trang Tin tức -->
+    <section class="page hidden" id="news">
+      <h2>Tin tức</h2>
+      <article>
+        <h3>Hội nghị cán bộ toàn xã</h3>
+        <p>Ngày 15/09/2025, Đảng ủy xã tổ chức hội nghị cán bộ nhằm triển khai nhiệm vụ quý IV.</p>
+      </article>
+      <article>
+        <h3>Hoạt động tình nguyện vì cộng đồng</h3>
+        <p>Chi đoàn thanh niên phối hợp cùng Hội phụ nữ xã tổ chức dọn vệ sinh, trồng cây xanh tại khu dân cư.</p>
+      </article>
+      <article>
+        <h3>Sinh hoạt chi bộ tháng 9</h3>
+        <p>Các chi bộ trực thuộc Đảng ủy xã tổ chức sinh hoạt định kỳ, thảo luận về công tác xây dựng Đảng.</p>
+      </article>
+    </section>
+
+    <!-- Trang Văn bản -->
+    <section class="page hidden" id="docs">
+      <h2>Văn bản</h2>
+      <table>
+        <tr><th>Ngày</th><th>Số/Ký hiệu</th><th>Trích yếu</th><th>Tải về</th></tr>
+        <tr><td>19/09/2025</td><td>01/NQ-ĐU</td><td>Nghị quyết về công tác xây dựng Đảng</td><td><a href="#">PDF</a></td></tr>
+        <tr><td>15/09/2025</td><td>02/HD-ĐU</td><td>Hướng dẫn triển khai nhiệm vụ</td><td><a href="#">DOC</a></td></tr>
+        <tr><td>01/09/2025</td><td>03/BC-ĐU</td><td>Báo cáo tổng kết tháng</td><td><a href="#">PDF</a></td></tr>
+      </table>
+    </section>
+
+    <!-- Trang Tuyên truyền -->
+    <section class="page hidden" id="propaganda">
+      <h2>Tuyên truyền</h2>
+      <article>
+        <h3>Học tập và làm theo tư tưởng Hồ Chí Minh</h3>
+        <p>Đảng ủy xã triển khai các hoạt động sinh hoạt chính trị sâu rộng về tư tưởng, đạo đức, phong cách Hồ Chí Minh.</p>
+      </article>
+      <article>
+        <h3>Tuyên truyền chính sách pháp luật</h3>
+        <p>Các buổi phổ biến pháp luật mới cho nhân dân, tập trung vào lĩnh vực đất đai, an ninh trật tự.</p>
+      </article>
+      <article>
+        <h3>Phong trào thi đua yêu nước</h3>
+        <p>Phát động phong trào "Toàn dân đoàn kết xây dựng đời sống văn hóa" gắn với chương trình nông thôn mới.</p>
+      </article>
+    </section>
+
+    <!-- Trang Thư viện -->
+    <section class="page hidden" id="gallery">
+      <h2>Thư viện ảnh</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/300?text=Ảnh+1" alt="Ảnh 1">
+        <img src="https://via.placeholder.com/300?text=Ảnh+2" alt="Ảnh 2">
+        <img src="https://via.placeholder.com/300?text=Ảnh+3" alt="Ảnh 3">
+        <img src="https://via.placeholder.com/300?text=Ảnh+4" alt="Ảnh 4">
+      </div>
+      <h2>Video</h2>
+      <p>[Nhúng video YouTube hoặc MP4 tại đây]</p>
+    </section>
+
+    <!-- Trang Liên hệ -->
+    <section class="page hidden" id="contact">
+      <h2>Liên hệ</h2>
+      <form id="contactForm">
+        <label>Họ tên:</label><br>
+        <input type="text" name="name" required style="width:100%"><br>
+        <label>Email:</label><br>
+        <input type="email" name="email" required style="width:100%"><br>
+        <label>Nội dung:</label><br>
+        <textarea name="message" required style="width:100%" rows="5"></textarea><br>
+        <button type="submit">Gửi</button>
+      </form>
+      <h3>Thông tin liên hệ</h3>
+      <p>Địa chỉ: Thôn Đồng Tâm, xã Đinh Văn Lâm Hà</p>
+      <p>Điện thoại: 02633.850.321</p>
+      <p>Email: abc@lamdong.gov.vn</p>
+    </section>
+
+    <aside class="sidebar">
+      <h2>Thông báo</h2>
+      <p>⏰ Lịch công tác tuần: Họp chi bộ ngày 21/09</p>
+      <p>📣 Tập huấn nghiệp vụ cho cán bộ xã ngày 25/09</p>
+
+      <h2>Liên kết nhanh</h2>
+      <ul>
+        <li><a href="https://dinhvanlamha.lamdong.dcs.vn/">Đảng ủy xã Đinh Văn Lâm Hà</a></li>
+        <li><a href="https://www.lamdong.dcs.vn/">Tỉnh ủy Lâm Đồng</a></li>
+        <li><a href="https://dangcongsan.vn/">Trang Trung ương Đảng</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>ĐẢNG ỦY XÃ ĐINH VĂN LÂM HÀ - TỈNH LÂM ĐỒNG</p>
+    <p>Địa chỉ: Thôn Đồng Tâm, xã Đinh Văn Lâm Hà | Điện thoại: 02633.850.321 | Email: abc@lamdong.gov.vn</p>
+  </footer>
+</body>
+</html>
